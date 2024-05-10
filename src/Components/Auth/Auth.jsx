@@ -52,19 +52,22 @@ const Auth = () => {
   };
 
   return (
-    <div>
-      <h1>Google Auth with Firebase App</h1>
-      {!isLoggedIn && <button onClick={handleSignIn}>Sign In With Google</button>}
+    <div className="box">
+       <div className="container">
+      <h1 className='title'>Google Auth with Firebase <span>React JS Web App</span></h1>
+      {!isLoggedIn && <button className='button' onClick={handleSignIn}>Sign In With Google</button>}
       {isLoggedIn && (
         <React.Fragment>
-          <button onClick={handleSignOut}>Sign Out</button>
-          <h2>{name}</h2>
-          <h2>{email}</h2>
-          <img src={profilePic} alt="logged in user's profile picture" />
+          <button className='button' onClick={handleSignOut}>Sign Out</button>
+          <h2 className='profile'>{name}</h2>
+          <h2 className='profile'>{email}</h2>
+          <img className='profile' src={profilePic} alt="logged in user's profile picture" />
         </React.Fragment>
       )}
-      {!name && !email && !profilePic && <h3>Not Logged In</h3>}
+      {!name && !email && !profilePic && <h3 className='not-logged-in'>Not Logged In</h3>}
+    </div>      
     </div>
+
   );
 };
 

@@ -3,3 +3,76 @@
     padding: 0;
     box-sizing: border-box;
 }
+.box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #343434, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .title span{
+    color: #8a2be2;
+    text-decoration: underline;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .button:hover {
+    background-color: #1a73e8;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .profile h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .not-logged-in {
+    font-size: 16px;
+    margin-top: 20px;
+  }
